@@ -8,6 +8,7 @@ public class InputNote : MonoBehaviour
 
     public List<GameObject> noteOnInput;
     public bool inArea = false;
+    public HealthBarScript healthBar;
 
     private int currentIndex=0;
     private bool noteHit = false;
@@ -95,11 +96,13 @@ public class InputNote : MonoBehaviour
         Debug.Log("Note Hit!");
         Destroy(noteOnInput[currentIndex]);
         currentIndex++;
+        healthBar.RPH();
     }
     public void OnNoteMiss()
     {
         Debug.Log("Note Miss!");
         Destroy(noteOnInput[currentIndex]);
         currentIndex++;
+        healthBar.DPM();
     }
 }
