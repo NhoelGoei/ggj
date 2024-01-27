@@ -2932,7 +2932,7 @@ ScriptedImporter:
     rect:
       serializedVersion: 2
       x: 189
-      y: 213
+      y: 305
       width: 221
       height: 84
     spriteID: dd8e9d02decfedb45a6528459ea7c378
@@ -3248,7 +3248,7 @@ ScriptedImporter:
     - {x: 10, y: 23}
     - {x: 10, y: 11}
     tessellationDetail: 0
-    uvTransform: {x: 189, y: 213}
+    uvTransform: {x: 189, y: 305}
     spritePosition: {x: 186, y: 159}
   - name: lengan kanan
     originalName: 
@@ -3603,7 +3603,7 @@ ScriptedImporter:
     rect:
       serializedVersion: 2
       x: 189
-      y: 305
+      y: 213
       width: 221
       height: 84
     spriteID: 9450f812400287940abc572b49168f77
@@ -3939,7 +3939,7 @@ ScriptedImporter:
     - {x: 10, y: 26}
     - {x: 11, y: 26}
     tessellationDetail: 0
-    uvTransform: {x: 189, y: 305}
+    uvTransform: {x: 189, y: 213}
     spritePosition: {x: 129, y: 159}
   characterData:
     bones:
@@ -4182,6 +4182,46 @@ ScriptedImporter:
   resliceFromLayer: 0
   mosaicPSDLayers: []
   rigPSDLayers:
+  - name: lengan kiri
+    spriteName: lengan kiri
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 842f0fdc0e5fbfb4594eb59239139cd1
+    layerID: 68
+    mosaicPosition: {x: 189, y: 397}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: lengan kanan
+    spriteName: lengan kanan
+    isGroup: 0
+    parentIndex: -1
+    spriteID: efd8c5bc8324664488a5216d27ffbdb4
+    layerID: 66
+    mosaicPosition: {x: 357, y: 4}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: tangan kanan
+    spriteName: tangan kanan
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 9450f812400287940abc572b49168f77
+    layerID: 60
+    mosaicPosition: {x: 189, y: 213}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: tangan kiri
+    spriteName: tangan kiri
+    isGroup: 0
+    parentIndex: -1
+    spriteID: dd8e9d02decfedb45a6528459ea7c378
+    layerID: 67
+    mosaicPosition: {x: 189, y: 305}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
   - name: kepala
     spriteName: kepala
     isGroup: 0
@@ -4229,46 +4269,6 @@ ScriptedImporter:
     spriteID: 5b02933c69adfc14ea9629dbbdf90ecf
     layerID: 70
     mosaicPosition: {x: 418, y: 305}
-    flatten: 0
-    isImported: 1
-    isVisible: 1
-  - name: lengan kiri
-    spriteName: lengan kiri
-    isGroup: 0
-    parentIndex: -1
-    spriteID: 842f0fdc0e5fbfb4594eb59239139cd1
-    layerID: 68
-    mosaicPosition: {x: 189, y: 397}
-    flatten: 0
-    isImported: 1
-    isVisible: 1
-  - name: tangan kiri
-    spriteName: tangan kiri
-    isGroup: 0
-    parentIndex: -1
-    spriteID: dd8e9d02decfedb45a6528459ea7c378
-    layerID: 67
-    mosaicPosition: {x: 189, y: 213}
-    flatten: 0
-    isImported: 1
-    isVisible: 1
-  - name: lengan kanan
-    spriteName: lengan kanan
-    isGroup: 0
-    parentIndex: -1
-    spriteID: efd8c5bc8324664488a5216d27ffbdb4
-    layerID: 66
-    mosaicPosition: {x: 357, y: 4}
-    flatten: 0
-    isImported: 1
-    isVisible: 1
-  - name: tangan kanan
-    spriteName: tangan kanan
-    isGroup: 0
-    parentIndex: -1
-    spriteID: 9450f812400287940abc572b49168f77
-    layerID: 60
-    mosaicPosition: {x: 189, y: 305}
     flatten: 0
     isImported: 1
     isVisible: 1
