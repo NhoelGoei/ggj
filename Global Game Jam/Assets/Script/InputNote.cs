@@ -13,7 +13,18 @@ public class InputNote : MonoBehaviour
     private int currentIndex=0;
     private bool noteHit = false;
 
-    // Update is called once per frame
+    public List<AudioClip> audioClips;
+    private AudioSource audioSource;
+
+    public List<AudioClip> AudioClips;
+    private AudioSource AudioSource;
+
+    void Start()
+    {
+        audioSource = GetComponent<AudioSource>();
+        AudioSource = GetComponent<AudioSource>();
+    }
+
     void Update()
     {
         try
@@ -97,6 +108,7 @@ public class InputNote : MonoBehaviour
         Destroy(noteOnInput[currentIndex]);
         currentIndex++;
         healthBar.RPH();
+        PlayRandomAudio();
     }
     public void OnNoteMiss()
     {
@@ -104,5 +116,38 @@ public class InputNote : MonoBehaviour
         Destroy(noteOnInput[currentIndex]);
         currentIndex++;
         healthBar.DPM();
+        PlaysRandomAudio();
+    }
+    public void PlayRandomAudio()
+    {
+        if (audioClips.Count > 0)
+        {
+            // Select a random audio clip from the list
+            AudioClip randomClip = audioClips[Random.Range(0, audioClips.Count)];
+
+            // Play the selected audio clip
+            audioSource.clip = randomClip;
+            audioSource.Play();
+        }
+        else
+        {
+            Debug.LogError("Audio clips list is empty!");
+        }
+    }
+    public void PlaysRandomAudio()
+    {
+        if (AudioClips.Count > 0)
+        {
+            // Select a random audio clip from the list
+            AudioClip randomClip = AudioClips[Random.Range(0, AudioClips.Count)];
+
+            // Play the selected audio clip
+            AudioSource.clip = randomClip;
+            AudioSource.Play();
+        }
+        else
+        {
+            Debug.LogError("Audio clips list is empty!");
+        }
     }
 }
