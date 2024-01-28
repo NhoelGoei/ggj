@@ -26,4 +26,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/LoseGame.unity
     guid: 77e3aba77b90dc744b0fb0da61a3938f
+  - enabled: 1
+    path: Assets/Scenes/StageSelect.unity
+    guid: 6ba39a8bc60dcb747a45420b90c49bda
   m_configObjects: {}

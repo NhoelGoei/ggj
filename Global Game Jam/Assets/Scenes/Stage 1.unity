@@ -158,7 +158,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 10, y: 0}
+  m_SizeDelta: {x: 0, y: -3.23}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1021420
 MonoBehaviour:
@@ -180,8 +180,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 1433397058, guid: b3c7caf41ddf9c5449c10293c96c56df, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -242,6 +242,8 @@ MonoBehaviour:
   - {fileID: 8300000, guid: beb57f2c1eeaf8e408c637ecf1a404a3, type: 3}
   - {fileID: 8300000, guid: 094357c32eeb9d944b0d8623f0d45676, type: 3}
   - {fileID: 8300000, guid: d8d1684003870ff4f933e32599f1559b, type: 3}
+  HitVFX: {fileID: 6102488968296822038, guid: f7dd3b2be3dce224fa0d667f351dfd3e, type: 3}
+  MissVFX: {fileID: 7140002974122479477, guid: b8b12fa418fcda24f9c0391a1f95bb0f, type: 3}
 --- !u!82 &79736951
 AudioSource:
   m_ObjectHideFlags: 0
@@ -818,8 +820,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 20, y: 0}
+  m_AnchoredPosition: {x: 0, y: -0.29999924}
+  m_SizeDelta: {x: 20, y: 0.03000021}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &440707674
 CanvasRenderer:
@@ -849,7 +851,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
+  m_Sprite: {fileID: -917034359, guid: 1e367b0cfd8326b4f93a27ef9fb602d1, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -888,10 +890,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 94b35baa804f2fe418ad7f89fa992ff7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  drainPerSecond: 5
+  drainPerSecond: 3
   drainPerMiss: 5
-  regenPerHit: 3
+  regenPerHit: 5
   healthBar: {fileID: 198710958}
+  bgm: {fileID: 1722313471}
   health: 100
 --- !u!4 &467651914
 Transform:
@@ -1381,8 +1384,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: -522946958, guid: 225cd9d4d2ff8bb4a8cbe6477034ee3c, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -1790,6 +1793,8 @@ MonoBehaviour:
   - {fileID: 8300000, guid: beb57f2c1eeaf8e408c637ecf1a404a3, type: 3}
   - {fileID: 8300000, guid: 094357c32eeb9d944b0d8623f0d45676, type: 3}
   - {fileID: 8300000, guid: d8d1684003870ff4f933e32599f1559b, type: 3}
+  HitVFX: {fileID: 6102488968296822038, guid: f7dd3b2be3dce224fa0d667f351dfd3e, type: 3}
+  MissVFX: {fileID: 7140002974122479477, guid: b8b12fa418fcda24f9c0391a1f95bb0f, type: 3}
 --- !u!82 &1040628685
 AudioSource:
   m_ObjectHideFlags: 0
@@ -2535,6 +2540,8 @@ MonoBehaviour:
   - {fileID: 8300000, guid: beb57f2c1eeaf8e408c637ecf1a404a3, type: 3}
   - {fileID: 8300000, guid: 094357c32eeb9d944b0d8623f0d45676, type: 3}
   - {fileID: 8300000, guid: d8d1684003870ff4f933e32599f1559b, type: 3}
+  HitVFX: {fileID: 6102488968296822038, guid: f7dd3b2be3dce224fa0d667f351dfd3e, type: 3}
+  MissVFX: {fileID: 7140002974122479477, guid: b8b12fa418fcda24f9c0391a1f95bb0f, type: 3}
 --- !u!212 &1231610260
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2676,6 +2683,8 @@ MonoBehaviour:
   - {fileID: 8300000, guid: beb57f2c1eeaf8e408c637ecf1a404a3, type: 3}
   - {fileID: 8300000, guid: 094357c32eeb9d944b0d8623f0d45676, type: 3}
   - {fileID: 8300000, guid: d8d1684003870ff4f933e32599f1559b, type: 3}
+  HitVFX: {fileID: 6102488968296822038, guid: f7dd3b2be3dce224fa0d667f351dfd3e, type: 3}
+  MissVFX: {fileID: 7140002974122479477, guid: b8b12fa418fcda24f9c0391a1f95bb0f, type: 3}
 --- !u!82 &1254202040
 AudioSource:
   m_ObjectHideFlags: 0

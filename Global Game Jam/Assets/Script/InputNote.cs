@@ -19,6 +19,9 @@ public class InputNote : MonoBehaviour
     public List<AudioClip> AudioClips;
     private AudioSource AudioSource;
 
+    public GameObject HitVFX;
+    public GameObject MissVFX;
+
     void Start()
     {
         audioSource = GetComponent<AudioSource>();
@@ -109,6 +112,8 @@ public class InputNote : MonoBehaviour
         currentIndex++;
         healthBar.RPH();
         PlayRandomAudio();
+        GameObject objectToDestroy = Instantiate(HitVFX, transform.position, Quaternion.identity);
+        Destroy(objectToDestroy, 1f);
     }
     public void OnNoteMiss()
     {
@@ -117,6 +122,8 @@ public class InputNote : MonoBehaviour
         currentIndex++;
         healthBar.DPM();
         PlaysRandomAudio();
+        GameObject objectToDestroy = Instantiate(MissVFX, transform.position, Quaternion.identity);
+        Destroy(objectToDestroy, 1f);
     }
     public void PlayRandomAudio()
     {
